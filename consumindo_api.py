@@ -23,7 +23,7 @@ for cep in range(1,6):
 
     r = r.json()
 
-    lugar = r['localidade'], r['bairro']
+    lugar = ceps, r['uf'], r['localidade'], r['bairro'], r['logradouro'] 
    
     print(lugar)
 
